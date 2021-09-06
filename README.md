@@ -13,13 +13,13 @@ In 2017, the average yearly return was 67.3% with all but one stock having a pos
 ### Analysis
 In order to obtain this data, I wrote a script to run the analysis and provide the desired statistics. The scripts executed a loop in the data sheets, outputting the ticker, tickervolume, and yearly return. While this gave us the corret analysis and a visualization of the stock performance, there was an oppurtunity to refactor the code to make it run faster and more efficiently. One change made was the creating three output arrays: tickerVolumes, tickerStartingPrices, and tickerEndingPrices. The new refactored code looped over the data all at once, compared to the old scrpit where we had embedded for loops that intrusted the program to loop over more than once. Below is a comparrison between the execution times of the original script and the refactored script. 
 
-#####Refactored executions times: 
+##### Refactored executions times: 
 
 ![](resources/VBA_Challenge_2017.png)
 
 ![](resources/VBA_Challenge_2018.png)
 
-#####Original execution times: 
+##### Original execution times: 
 
 ![](resources/original_2017.png)
 
